@@ -34,6 +34,9 @@ namespace pokePrompt {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::TextBox^  textBox1;
+	private: System::Windows::Forms::TextBox^  textBox2;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,12 +51,41 @@ namespace pokePrompt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"gui";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->SuspendLayout();
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(10, 29);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(826, 20);
+			this->textBox1->TabIndex = 0;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(11, 55);
+			this->textBox2->Multiline = true;
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(825, 438);
+			this->textBox2->TabIndex = 1;
+			// 
+			// gui
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(850, 505);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
+			this->Name = L"gui";
+			this->Text = L"gui";
+			this->Load += gcnew System::EventHandler(this, &gui::gui_Load);
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
+	private: System::Void gui_Load(System::Object^  sender, System::EventArgs^  e) {
+	}
 	};
 }
