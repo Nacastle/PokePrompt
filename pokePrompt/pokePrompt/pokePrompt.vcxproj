@@ -133,14 +133,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BTree.cpp" />
+    <ClCompile Include="BTreeNode.cpp" />
+    <ClCompile Include="BTreePrinter.cpp" />
+    <ClCompile Include="editor_texto.cpp" />
     <ClCompile Include="gui.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BTree.h" />
+    <ClInclude Include="BTreeNode.h" />
+    <ClInclude Include="BTreePrinter.h" />
+    <ClInclude Include="editor_texto.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="gui.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="editor_texto.resx">
+      <DependentUpon>editor_texto.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gui.resx">
       <DependentUpon>gui.h</DependentUpon>
     </EmbeddedResource>

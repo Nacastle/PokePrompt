@@ -1,3 +1,12 @@
-﻿  gui.cpp
+﻿  editor_texto.cpp
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\gui.h(160): error C2065: 'editor_texto': identificador no declarado
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\gui.h(160): error C2065: 'edt': identificador no declarado
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\gui.h(160): error C2061: error de sintaxis: identificador 'editor_texto'
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\gui.h(161): error C2065: 'edt': identificador no declarado
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\gui.h(161): error C2227: el operando izquierdo de '->ShowDialog' debe señalar al tipo class/struct/union/generic
+  c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\gui.h(161): note: el tipo es 'unknown-type'
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\editor_texto.h(147): error C2065: 'p': identificador no declarado
+  gui.cpp
+c:\users\alex\desktop\pokeprompt\pokeprompt\pokeprompt\editor_texto.h(147): error C2065: 'p': identificador no declarado
 gui.cpp(6): warning C4829: Parámetros posiblemente incorrectos para la función main. Utilice 'int main(Platform::Array<Platform::String^>^ argv)'
-  pokePrompt.vcxproj -> C:\Users\alex\Desktop\PokePrompt\pokePrompt\Debug\pokePrompt.exe
+  Generando código...
